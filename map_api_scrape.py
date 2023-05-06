@@ -4,8 +4,6 @@ import time
 from datetime import date
 import pandas as pd
 
-from google.colab import drive
-drive.mount('/content/drive')
 
 api_key = "AIzaSyByJNT-YmrM7D2lvfrhMdIxTPUtWdS0nM8"
 search_query = "south indian restaurants near wembley central station"
@@ -48,7 +46,7 @@ for tk in split_search_query:
   csv_file_name += '_'
   csv_file_name += tk
 
-today = date.today()
-df.to_csv(r'/content/drive/MyDrive/maps_search_project/' + csv_file_name + '_' + today.strftime("%d_%m_%Y") + '.csv', index=False)
+# today = date.today()
+# df.to_csv(r'/content/drive/MyDrive/maps_search_project/' + csv_file_name + '_' + today.strftime("%d_%m_%Y") + '.csv', index=False)
 
 # df.to_csv(r'/content/drive/MyDrive/map_output_' + search_query + '_' + date.today() + '.csv', index=False)
