@@ -49,4 +49,4 @@ for tk in split_search_query:
 # today = date.today()
 # df.to_csv(r'/content/drive/MyDrive/maps_search_project/' + csv_file_name + '_' + today.strftime("%d_%m_%Y") + '.csv', index=False)
 
-# df.to_csv(r'/content/drive/MyDrive/map_output_' + search_query + '_' + date.today() + '.csv', index=False)
+df.to_csv(r'export.csv', index=False)
