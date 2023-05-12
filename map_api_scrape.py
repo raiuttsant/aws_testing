@@ -3,9 +3,10 @@ import json
 import time
 from datetime import date
 import pandas as pd
+import os
 
-
-api_key = "AIzaSyByJNT-YmrM7D2lvfrhMdIxTPUtWdS0nM8"
+# use environment variable to store api key
+api_key = os.environ.get('map_api_key')
 search_query = "south indian restaurants near wembley central station"
 region = "london"
 
